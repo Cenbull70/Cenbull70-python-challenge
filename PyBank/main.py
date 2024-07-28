@@ -45,6 +45,17 @@ with open (budget, "r") as budget_data:
 
 average_change = sum(changes) / len(changes) if changes else 0
 
+output_path = os.path.join("analysis", "budget_analysis")
+
+with open(output_path, "w",) as csvfile:
+	csvwriter = csv.writer(csvfile)
+	csvwriter.writerow([f"Richard Wallace Analysis"])
+	csvwriter.writerow([f'Total Months:, {total_months}'])
+	csvwriter.writerow([f'Total: ${net_total}'])
+	csvwriter.writerow([f'Average Change: ${round(average_change, 2)}'])
+	csvwriter.writerow([f'Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})'])
+	csvwriter.writerow([f'Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})'])
+
 
 print(f'Total Months: {total_months}')
 print(f'Total: ${net_total}')
