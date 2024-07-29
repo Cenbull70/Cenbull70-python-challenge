@@ -9,7 +9,7 @@ PyBank main.py looks at conducting analysis on a csv file to find out the follow
   <p>The greatest increase in profits (date and amount) over the entire period</p>
   <p>The greatest decrease in profits (date and amount) over the entire period</p>
   <p></p>
-  <p></p>
+  <p></p><br>
 
 <p>PyPoll main.py looks at conducting analysis on a csv file for a given election to find out the following information:</p>
     <p>The total number of votes cast</p>
